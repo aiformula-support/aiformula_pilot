@@ -1,0 +1,122 @@
+{
+  "speedIndicator": {
+    "label": "[km/h]",
+    "value": 0,
+    "decimals": 0,
+    "pointer": true,
+    "min": 0,
+    "max": 20,
+    "valueFontColor": "#000000",
+    "labelFontColor": "#000000"
+  },
+  "accelBrakeIndicators": {
+    "initChart": {
+      "type": "bar",
+      "data": {
+        "labels": [
+          "ACCEL",
+          "BRAKE"
+        ],
+        "datasets": [
+          {
+            "backgroundColor": [
+              "blue",
+              "red"
+            ],
+            "borderColor": [
+              "rgba(0, 192, 0, 0)",
+              "rgba(192, 192, 0, 1)"
+            ],
+            "borderWidth": 1
+          }
+        ]
+      },
+      "options": {
+        "responsive": true,
+        "maintainAspectRatio": false,
+        "scales": {
+          "y": {
+            "min": 0,
+            "max": 10,
+            "fontColor": "#000000",
+            "gridLines": {
+              "color": "#000000"
+            }
+          }
+        },
+        "plugins": {
+          "legend": {
+            "display": false
+          }
+        }
+      }
+    },
+    "scaleFactor": 5,
+    "indicatorsMinValue": 0,
+    "indicatorsMaxValue": 10
+  },
+  "drivingModeIndicator": {
+    "minimumViewValue": 0.05
+  },
+  "mapViewer": {
+    "initMap": {
+      "dragging": false,
+      "touchZoom": false,
+      "scrollWheelZoom": false,
+      "doubleClickZoom": false,
+      "boxZoom": false,
+      "tap": false,
+      "keyboard": false,
+      "zoomControl": false,
+      "zoomSnap": 0.1
+    },
+    "initMaker": {
+      "radius": 7,
+      "opacity": 1.0,
+      "color": "#e6e6fa"
+    },
+    "mapCenterPosition": [
+      36.113058,
+      139.981517
+    ],
+    "initMapSize": 18.5,
+    "imageTopLeftPosition": [
+      36.113472,
+      139.980478
+    ],
+    "imageBottomRightPosition": [
+      36.112555,
+      139.982117
+    ],
+    "viewerTopLeftPosition": [
+      36.11345,
+      139.981
+    ],
+    "viewerBottomRightPosition": [
+      36.1127,
+      139.9821
+    ]
+  },
+  "twistMuxViewer": {
+    "initCamera": {
+      "fov": 100,
+      "aspect": 1,
+      "near": 0.1,
+      "far": 1000
+    },
+    "initRenderer": {
+      "antialias": true
+    },
+    "scaleFactor": 5,
+    "vectorMaxLenght": 10,
+    "arrowInitialPoint": [
+      0,
+      -10,
+      0
+    ],
+    "arrowcolor": "#00ff00",
+    "arrowHeadLenght": 4,
+    "arrowHeadWidth": 4,
+    "cameraPositionZ": 20
+  }
+}
