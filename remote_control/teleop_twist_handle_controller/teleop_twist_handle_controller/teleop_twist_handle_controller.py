@@ -147,9 +147,9 @@ class TeleopTwistHandleController(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    teleop_twist__handle_controller = TeleopTwistHandleController()
-    rclpy.spin(teleop_twist__handle_controller)
-    teleop_twist__handle_controller.destroy_node()
+    teleop_twist_handle_controller = TeleopTwistHandleController()
+    rclpy.spin(teleop_twist_handle_controller)
+    teleop_twist_handle_controller.destroy_node()
     rclpy.shutdown()
 
 
