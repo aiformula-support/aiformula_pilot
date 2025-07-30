@@ -24,19 +24,7 @@ def generate_launch_description():
             ),
         ),
     )
-    twist_mux = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            osp.join(
-                get_package_share_directory("sample_launchers"),
-                "launch/twist_mux.launch.py",
-            ),
-        ),
-        launch_arguments={
-            "use_rviz": "false",
-            "use_runtime_monitor": "false",
-        }.items(),
-    )
-
+    # --- Start up a web server and render the topic --- #
     gui_webserver = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             osp.join(
@@ -50,7 +38,6 @@ def generate_launch_description():
         [
             handle_controller_joy,
             handle_controller_teleop,
-            twist_mux,
             gui_webserver,
         ]
     )
