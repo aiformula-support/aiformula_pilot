@@ -1,6 +1,7 @@
 # aiformula_pilot
 AI Formula is a technical challenge in which robot cars drive autonomously on a race course given a mission. Through competing for speed and intelligence in a real-world environment, AI Formula will provide an opportunity for rising engineers to acquire the skills and technology necessary for next-generation mobility research. This repository is intended for remotely controlling AI-formula.
-![aiformula_pilot](https://github.com/user-attachments/assets/0f4289e8-e75e-402b-9ecd-cc28dc5335ba)
+
+![aiformula_pilot](https://github.com/user-attachments/assets/88318d46-e031-4dab-8a2a-bb97d0ba08bb)
 
 Functions to be provided in this package:
 * common  (Util libraries for c++ and python)
