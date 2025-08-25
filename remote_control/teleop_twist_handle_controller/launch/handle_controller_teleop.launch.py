@@ -11,7 +11,6 @@ def generate_launch_description():
     PACKAGE_NAME = "teleop_twist_handle_controller"
     NODE_NAME = "teleop_node"
     PACKAGE_DIR = get_package_share_directory(PACKAGE_NAME)
-    _, TOPIC_NAMES = get_frame_ids_and_topic_names()
 
     launch_args = (
         DeclareLaunchArgument(
@@ -34,10 +33,10 @@ def generate_launch_description():
         arguments=["--ros-args", "--log-level", LaunchConfiguration('log_level')],
         parameters=[*ROS_PARAM_CONFIG],
         remappings=[
-            ("sub_joy", TOPIC_NAMES["control"]["joy"]["handle_controller"]),
-            ("pub_cmd_vel", TOPIC_NAMES["control"]["speed_command"]["handle_controller"]["normal"]),
-            ("pub_cmd_vel_coasting", TOPIC_NAMES["control"]["speed_command"]["handle_controller"]["coasting"]),
-            ("pub_twist_mux_lock", TOPIC_NAMES["control"]["twist_mux_lock"]["gamepad"]),
+            ("sub_joy", "/aiformula_control/handle_controller/joy"),
+            ("pub_cmd_vel", "/aiformula_control/handle_controller/cmd_vel"),
+            ("pub_cmd_vel_coasting", "/aiformula_control/handle_controller/cmd_vel/coasting"),
+            ("pub_twist_mux_lock", "/aiformula_control/twist_mux/gamepad/lock"),
         ],
     )
 

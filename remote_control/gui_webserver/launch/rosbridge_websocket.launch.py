@@ -7,7 +7,6 @@ from common_python.launch_util import get_frame_ids_and_topic_names
 
 
 def generate_launch_description():
-    _, TOPIC_NAMES = get_frame_ids_and_topic_names()
 
     launch_args = [
         DeclareLaunchArgument('port', default_value='9090', description='Port number'),
@@ -80,12 +79,12 @@ def generate_launch_description():
                 {'bson_only_mode': LaunchConfiguration('bson_only_mode')},
             ],
             remappings=[
-                ('compressed_img', TOPIC_NAMES["visualization"]["aiformula_pilot"]),
-                ('twist_mux/cmd_vel', TOPIC_NAMES["control"]["speed_command"]["multiplexed"]),
-                ('vectornav/gnss', TOPIC_NAMES["sensing"]["vectornav"]["gnss"]),
-                ('twist_mux_gamepad/lock', TOPIC_NAMES["control"]["twist_mux_lock"]["gamepad"]),
-                ('handle_controller/joy', TOPIC_NAMES["control"]["joy"]["handle_controller"]),
-                ('odom', TOPIC_NAMES["sensing"]["odometry"]["gyro"]),
+                ('compressed_img', "/aiformula_visualization/zed/left_image/compressed"),
+                ('twist_mux/cmd_vel', "/aiformula_control/twist_mux/cmd_vel"),
+                ('vectornav/gnss', "/aiformula_sensing/vectornav/gnss"),
+                ('twist_mux_gamepad/lock', "/aiformula_control/twist_mux/gamepad/lock"),
+                ('handle_controller/joy', "/aiformula_control/handle_controller/joy"),
+                ('odom', "/aiformula_sensing/gyro_odometry_publisher/odom"),
             ],
             condition=UnlessCondition(LaunchConfiguration('ssl')),
         ),
