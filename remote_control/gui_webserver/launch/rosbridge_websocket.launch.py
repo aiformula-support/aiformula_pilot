@@ -3,7 +3,6 @@ from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument, GroupAction
 from launch.substitutions import LaunchConfiguration
 from launch.conditions import IfCondition, UnlessCondition
-from common_python.launch_util import get_frame_ids_and_topic_names
 
 
 def generate_launch_description():
