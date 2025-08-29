@@ -2,7 +2,6 @@ import os.path as osp
 from launch import LaunchDescription
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
-from common_python.launch_util import get_frame_ids_and_topic_names
 
 
 def generate_launch_description():
