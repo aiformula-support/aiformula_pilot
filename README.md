@@ -28,6 +28,7 @@ Clone this repository and build:\
   cd ~/workspace/ros2_ws/src/ #use your current ros2 workspace folder
   git clone --recursive https://github.com/aiformula-support/aiformula_pilot.git
   sed -i 's/tf2_geometry_msgs\.hpp/tf2_geometry_msgs.h/g' ~/workspace/
+  bash ./aiformula_pilot/shellscripts/install.sh
   cd ..
   colcon build --symlink-install  # build the workspace
   source ~/workspace/ros2_ws/install/local_setup.bash
