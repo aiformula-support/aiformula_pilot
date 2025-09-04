@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000000;
+}
+
+header img {
+    width: 25%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.left-area {
+    display: flex;
+    flex-flow: column;
+    background-color: #ffffff;
+    width: 75%;
+}
+
+.left-area .upper {
+    margin-bottom: 5%;
+    text-align: center
+}
+
+.left-area .lower {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0%;
+}
+
+.left-area .lower .vehicle-control-indicators {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+}
+
+.left-area .upper img {
+    width: 80%;
+    border: solid 5px#000000;
+}
+
+.animation-container {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.animation-canvas {
+    height: 100%;
+    aspect-ratio: 1;
+    margin-left: 10%;
+}
+
+.right-area {
+    display: flex;
+    flex-flow: column;
+    width: 25%;
+    margin: 2%;
+    margin-top: 0%;
+    justify-content: space-between;
+}
+
+.box-vehicle-status {
+    flex: 1;
+    padding: 0.7em 1em;
+    margin: 1em 10%;
+    margin-top: 0em;
+    color: #2c2c2f;
+    background: #6495ed;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.box-vehicle-status p {
+    margin: 0;
+    padding: 0;
+}
+
+#real-time {
+    flex: 1;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.timer {
+    flex: 2;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: #555555;
+    margin: 10%;
+}
+
+.timer-largefont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffcc00;
+    font-size: 2vw;
+}
+
+.timer-smallfont {
+    color: #ffffff;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container {
+    flex: 5;
+}
+
+#map {
+    height: 260px;
+    background: none;
+    margin: 10%;
+}

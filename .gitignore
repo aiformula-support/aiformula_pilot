@@ -1,0 +1,19 @@
+# Vim
+*.swp
+*.swo
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# colcon
+build/
+install/
+log/
+
+# Python
+*.pyc
+
+*.png
+*.jpg
+!remote_control/gui_webserver/scripts/images/*
